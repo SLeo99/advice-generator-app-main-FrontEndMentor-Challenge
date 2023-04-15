@@ -1,0 +1,16 @@
+@use 'reset';
+@use 'variables';
+@use 'adviceGenerator';
+
+body {
+    display: grid;
+    place-content: center;
+    background-color: variables.$DarkBlue;
+    position: relative;
+}
+
+.attribution {
+    text-align: center;
+    color: #fff;
+    transform: translateY(5rem);
+}

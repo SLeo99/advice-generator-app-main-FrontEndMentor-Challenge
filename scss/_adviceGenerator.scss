@@ -1,0 +1,48 @@
+@use 'variables';
+
+.advice-generator {
+    width: calc(100% - 2rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: auto;
+    max-width: 33.75rem;
+    background-color: variables.$DarkGrayishBlue;
+    border-radius: 16px;
+    gap: 2rem;
+    padding: 3rem 1rem 4rem;
+    font-family: variables.$fontManrope;
+    position: relative;
+
+    &__text {
+        text-transform: uppercase;
+        color: variables.$NeonGreen;
+        letter-spacing: 2px;
+    }
+
+    &__advice {
+        color: variables.$LightCyan;
+        text-align: center;
+        // font-weight: variables.$fManrope800;
+        font-size: variables.$font;
+    }
+
+    &__dice {
+        min-height: 4rem;
+        min-width: 4rem;
+        background-color: variables.$GrayishBlue;
+        display: grid;
+        place-content: center;
+        border-radius: 50%;
+        position: absolute;
+        bottom: calc(0% - 2rem);
+        background-color: variables.$NeonGreen;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 
+            0 0 40px variables.$NeonGreen;
+            transition: .35s ease-in-out;
+        }
+    }
+}
